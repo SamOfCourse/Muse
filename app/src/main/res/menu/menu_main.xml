@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sheetmusic.MainActivity">
+    <item android:title="Music Helper" />
+    <item
+        android:id="@+id/feature_switch"
+        android:title="Features Menu"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="always" />
+    <item android:title="Note Listener" />
+    <item android:title="Metronome">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/quarter_speed_switch"
+                    android:title="25% Speed Tempo"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/half_speed_switch"
+                    android:title="50% Speed Tempo"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/normal_speed_switch"
+                    android:title="Normal Tempo"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+            </group>
+        </menu>
+    </item>
+</menu>
