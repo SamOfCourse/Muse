@@ -1,33 +1,34 @@
 package com.example.sheetmusic;
 
-import android.app.Activity;
+import android.Manifest;
+import android.app.UiModeManager;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.activity.result.ActivityResultCallback;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.View;
-
+import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
 import com.example.sheetmusic.databinding.ActivityMainBinding;
-
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    private int SELECT_PICTURE = 200;
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        UiModeManager enableDarkMode = (UiModeManager) getSystemService(UI_MODE_SERVICE);
+        enableDarkMode.setNightMode(UiModeManager.MODE_NIGHT_YES);
         super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
@@ -41,14 +42,57 @@ public class MainActivity extends AppCompatActivity {
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
+            public void onClick(View v) {
+                // Simple permissions check
+                if (permissionsCheck()) {
+                    addImage();
+                } else {
+                    permissionRequest(Manifest.permission.READ_EXTERNAL_STORAGE, SELECT_PICTURE);
+                }
             }
         });
+    }
+
+    private void permissionRequest(String permission, int val){
+        requestPermissions(
+                new String[] { Manifest.permission.READ_EXTERNAL_STORAGE },
+                SELECT_PICTURE);
+    }
+
+    private void fabToast(int s) {
+        Toast.makeText(this, s, Toast.LENGTH_LONG).show();
+    }
+
+    private boolean permissionsCheck() {
+        return (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED);
+    }
+
+    public void addImage() {
+
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+
+        // Deprecated, but I'm keeping it -S, still needs to actually import and do something with the picture however
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), SELECT_PICTURE);
+    }
+
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == RESULT_OK) {
+            if (requestCode == SELECT_PICTURE) {
+                Uri imageUri = data.getData();
+                if (null != imageUri) {
+                    copyImageToApp(data);
+                }
+            }
+        }
+    }
+
+    public void copyImageToApp(Intent data) {
+        // Copy image file from external/local storage to app storage
     }
 
     @Override
@@ -80,9 +124,10 @@ public class MainActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
+
+
     public void hideFab(){
         binding.fab.hide();
-
         //can hide individual features in menu, but still need to figure out how to disable 3
         //(binding.toolbar.findViewById(R.id.feature_switch)).setVisibility(View.VISIBLE);
 
@@ -90,7 +135,6 @@ public class MainActivity extends AppCompatActivity {
     public void showFab(){
         binding.fab.show();
         //(binding.toolbar.findViewById(R.id.feature_switch)).setVisibility(View.INVISIBLE);
-
         //(binding.toolbar.findViewById(R.id.)).setVisibility(View.INVISIBLE);
     }
 }
