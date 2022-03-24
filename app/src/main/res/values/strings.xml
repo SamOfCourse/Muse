@@ -2,11 +2,16 @@
     <string name="app_name">Sheet Music</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">Library</string>
+    <string name="second_fragment_label">Music Reader</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="menu_music_helper">Music Helper</string>
+    <string name="menu_note_listener">Note Listener</string>
+    <string name="menu_metronome">Metronome</string>
+    <string name="submenu_metronome_quarter">25% Speed Tempo</string>
+    <string name="submenu_metronome_half">50% Speed Tempo</string>
+    <string name="submenu_metronome_full">Normal Tempo</string>
+    <string name="permission_toast">This feature requires access to your device storage.</string>
 </resources>

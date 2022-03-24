@@ -2,29 +2,822 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.sheetmusic.MainActivity">
-    <item android:title="Music Helper" />
+
+
+
     <item
         android:id="@+id/feature_switch"
         android:title="Features Menu"
         app:actionLayout="@layout/switch_item"
         app:showAsAction="always" />
-    <item android:title="Note Listener" />
-    <item android:title="Metronome">
+    <item android:title="@string/menu_music_helper" />
+    <item android:title="@string/menu_note_listener" />
+    <item android:title="@string/menu_metronome">
         <menu>
             <group>
                 <item
-                    android:id="@+id/quarter_speed_switch"
-                    android:title="25% Speed Tempo"
+                    android:id="@+id/Tempo_40"
+                    android:title="40"
                     app:actionLayout="@layout/switch_item"
                     app:showAsAction="always" />
                 <item
-                    android:id="@+id/half_speed_switch"
-                    android:title="50% Speed Tempo"
+                    android:id="@+id/Tempo_41"
+                    android:title="41"
                     app:actionLayout="@layout/switch_item"
                     app:showAsAction="always" />
                 <item
-                    android:id="@+id/normal_speed_switch"
-                    android:title="Normal Tempo"
+                    android:id="@+id/Tempo_42"
+                    android:title="42"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_43"
+                    android:title="43"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_44"
+                    android:title="44"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_45"
+                    android:title="45"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_46"
+                    android:title="46"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_47"
+                    android:title="47"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_48"
+                    android:title="48"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_49"
+                    android:title="49"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_50"
+                    android:title="50"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_51"
+                    android:title="51"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_52"
+                    android:title="52"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_53"
+                    android:title="53"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_54"
+                    android:title="54"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_55"
+                    android:title="55"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_56"
+                    android:title="56"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_57"
+                    android:title="57"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_58"
+                    android:title="58"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_59"
+                    android:title="59"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_60"
+                    android:title="60"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_61"
+                    android:title="61"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_62"
+                    android:title="62"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_63"
+                    android:title="63"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_64"
+                    android:title="64"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_65"
+                    android:title="65"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_66"
+                    android:title="66"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_67"
+                    android:title="67"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_68"
+                    android:title="68"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_69"
+                    android:title="69"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_70"
+                    android:title="70"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_71"
+                    android:title="71"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_72"
+                    android:title="72"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_73"
+                    android:title="73"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_74"
+                    android:title="74"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_75"
+                    android:title="75"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_76"
+                    android:title="76"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_77"
+                    android:title="77"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_78"
+                    android:title="78"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_79"
+                    android:title="79"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_80"
+                    android:title="80"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_81"
+                    android:title="81"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_82"
+                    android:title="82"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_83"
+                    android:title="83"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_84"
+                    android:title="84"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_85"
+                    android:title="85"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_86"
+                    android:title="86"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_87"
+                    android:title="87"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_88"
+                    android:title="88"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_89"
+                    android:title="89"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_90"
+                    android:title="90"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_91"
+                    android:title="91"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_92"
+                    android:title="92"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_93"
+                    android:title="93"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_94"
+                    android:title="94"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_95"
+                    android:title="95"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_96"
+                    android:title="96"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_97"
+                    android:title="97"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_98"
+                    android:title="98"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_99"
+                    android:title="99"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_100"
+                    android:title="100"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_101"
+                    android:title="101"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_102"
+                    android:title="102"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_103"
+                    android:title="103"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_104"
+                    android:title="104"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_105"
+                    android:title="105"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_106"
+                    android:title="106"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_107"
+                    android:title="107"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_108"
+                    android:title="108"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_109"
+                    android:title="109"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_110"
+                    android:title="110"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_111"
+                    android:title="111"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_112"
+                    android:title="112"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_113"
+                    android:title="113"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_114"
+                    android:title="114"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_115"
+                    android:title="115"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_116"
+                    android:title="116"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_117"
+                    android:title="117"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_118"
+                    android:title="118"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_119"
+                    android:title="119"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_120"
+                    android:title="120"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_121"
+                    android:title="121"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_122"
+                    android:title="122"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_123"
+                    android:title="123"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_124"
+                    android:title="124"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_125"
+                    android:title="125"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_126"
+                    android:title="126"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_127"
+                    android:title="127"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_128"
+                    android:title="128"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_129"
+                    android:title="129"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_130"
+                    android:title="130"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_131"
+                    android:title="131"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_132"
+                    android:title="132"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_133"
+                    android:title="133"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_134"
+                    android:title="134"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_135"
+                    android:title="135"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_136"
+                    android:title="136"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_137"
+                    android:title="137"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_138"
+                    android:title="138"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_139"
+                    android:title="139"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_140"
+                    android:title="140"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_141"
+                    android:title="141"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_142"
+                    android:title="142"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_143"
+                    android:title="143"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_144"
+                    android:title="144"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_145"
+                    android:title="145"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_146"
+                    android:title="146"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_147"
+                    android:title="147"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_148"
+                    android:title="148"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_149"
+                    android:title="149"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_150"
+                    android:title="150"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_151"
+                    android:title="151"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_152"
+                    android:title="152"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_153"
+                    android:title="153"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_154"
+                    android:title="154"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_155"
+                    android:title="155"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_156"
+                    android:title="156"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_157"
+                    android:title="157"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_158"
+                    android:title="158"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_159"
+                    android:title="159"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_160"
+                    android:title="160"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_161"
+                    android:title="161"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_162"
+                    android:title="162"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_163"
+                    android:title="163"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_164"
+                    android:title="164"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_165"
+                    android:title="165"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_166"
+                    android:title="166"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_167"
+                    android:title="167"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_168"
+                    android:title="168"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_169"
+                    android:title="169"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_170"
+                    android:title="170"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_171"
+                    android:title="171"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_172"
+                    android:title="172"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_173"
+                    android:title="173"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_174"
+                    android:title="174"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_175"
+                    android:title="175"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_176"
+                    android:title="176"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_177"
+                    android:title="177"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_178"
+                    android:title="178"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_179"
+                    android:title="179"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_180"
+                    android:title="180"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_181"
+                    android:title="181"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_182"
+                    android:title="182"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_183"
+                    android:title="183"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_184"
+                    android:title="184"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_185"
+                    android:title="185"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_186"
+                    android:title="186"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_187"
+                    android:title="187"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_188"
+                    android:title="188"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_189"
+                    android:title="189"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_190"
+                    android:title="190"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_191"
+                    android:title="191"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_192"
+                    android:title="192"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_193"
+                    android:title="193"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_194"
+                    android:title="194"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_195"
+                    android:title="195"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_196"
+                    android:title="196"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_197"
+                    android:title="197"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_198"
+                    android:title="198"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_199"
+                    android:title="199"
+                    app:actionLayout="@layout/switch_item"
+                    app:showAsAction="always" />
+                <item
+                    android:id="@+id/Tempo_200"
+                    android:title="200"
                     app:actionLayout="@layout/switch_item"
                     app:showAsAction="always" />
             </group>
