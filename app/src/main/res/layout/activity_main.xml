@@ -7,7 +7,6 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.SheetMusic.AppBarOverlay">
@@ -38,9 +37,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|left"
-        android:layout_marginLeft="24dp"
-        android:layout_marginBottom="30dp"
-        android:textColor="#BF01877C"
-        android:textSize="34sp" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Tempo"
+        android:textColor="#0078FF"
+        android:textSize="48sp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

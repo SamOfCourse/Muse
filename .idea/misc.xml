@@ -3,16 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/SeniorProject-main/SeniorProject-master/SeniorProject-master/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/SeniorProject-main/SeniorProject-master/SeniorProject-master/app/src/main/res/layout/content_main.xml" value="0.25" />
-        <entry key="..\:/SeniorProject-main/SeniorProject-master/SeniorProject-master/app/src/main/res/layout/fragment_first.xml" value="0.15096251266464034" />
-        <entry key="..\:/SeniorProject-main/SeniorProject-master/SeniorProject-master/app/src/main/res/layout/fragment_second.xml" value="0.15096251266464034" />
-        <entry key="..\:/SeniorProject-main/SeniorProject-master/SeniorProject-master/app/src/main/res/layout/switch_item.xml" value="0.338768115942029" />
-        <entry key="..\:/SeniorProject-main/SeniorProject-master/SeniorProject-master/app/src/main/res/menu/menu_main.xml" value="0.25" />
+        <entry key="..\:/SeniorProject-all/SeniorProject-master/SeniorProject-master/app/src/main/res/layout/activity_main.xml" value="0.2672239108409321" />
+        <entry key="..\:/SeniorProject-all/SeniorProject-master/SeniorProject-master/app/src/main/res/layout/content_main.xml" value="0.2672239108409321" />
+        <entry key="..\:/SeniorProject-all/SeniorProject-master/SeniorProject-master/app/src/main/res/layout/switch_item.xml" value="0.2672239108409321" />
+        <entry key="..\:/SeniorProject-all/SeniorProject-master/SeniorProject-master/app/src/main/res/menu/menu_main.xml" value="0.28703703703703703" />
         <entry key="..\:/Users/Sam/Desktop/CSCD 488/Project Code/SeniorProject/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sam/Desktop/CSCD 488/Project Code/SeniorProject/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sam/Desktop/CSCD 488/Project Code/SeniorProject/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sam/Desktop/CSCD 488/Project Code/SeniorProject/app/src/main/res/menu/menu_main.xml" value="0.33" />
+        <entry key="..\:/Users/Sam/Desktop/Project/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Sam/Desktop/Project/app/src/main/res/layout/content_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Sam/Desktop/Project/app/src/main/res/layout/fragment_first.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Sam/Desktop/Project/app/src/main/res/layout/fragment_second.xml" value="0.33" />
+        <entry key="..\:/Users/Sam/Desktop/Project/app/src/main/res/layout/switch_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Sam/Desktop/Project/app/src/main/res/menu/menu_main.xml" value="0.20520833333333333" />
       </map>
     </option>
   </component>

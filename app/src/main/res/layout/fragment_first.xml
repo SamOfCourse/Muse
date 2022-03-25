@@ -11,26 +11,36 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linear_library"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/imageButton"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:tag="city_of_tears"
                 android:src="@drawable/city_of_tears" />
 
             <ImageButton
                 android:id="@+id/imageButton2"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:tag="golden_wind"
                 android:src="@drawable/golden_wind" />
 
             <ImageButton
                 android:id="@+id/imageButton3"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:tag="still_alive"
                 android:src="@drawable/still_alive" />
         </LinearLayout>
     </ScrollView>
