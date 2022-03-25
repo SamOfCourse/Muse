@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+
 import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -27,9 +28,11 @@ import androidx.navigation.ui.NavigationUI;
 import com.sheetmusic.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
+
 import android.widget.Toast;
 import java.io.*;
 import java.util.ArrayList;
@@ -101,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         bpmViewer = findViewById(R.id.textViewTempo);
 
         bpmViewer.setText(String.valueOf(metronome.getBpm()));
+
     }
 
     //User wants to add file but no permissions were found
@@ -249,6 +253,7 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
 
+
         MenuItem item = menu.findItem(R.id.feature_switch);
         item.setActionView(R.layout.switch_item);
 
@@ -265,6 +270,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
 
         return true;
     }
