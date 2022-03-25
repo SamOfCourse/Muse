@@ -8,7 +8,12 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+
+import android.media.AudioAttributes;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,6 +28,11 @@ import androidx.navigation.ui.NavigationUI;
 import com.sheetmusic.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import android.widget.CompoundButton;
+import android.widget.Switch;
+import android.widget.TextView;
+
 import android.widget.Toast;
 import java.io.*;
 import java.util.ArrayList;
@@ -34,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
     private int REQUEST_IMAGE_CAPTURE = 1;
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+
+    private Switch sw;
+    private int beatSound;
+    private SoundPool soundPool;
+    private Metronome metronome;
+    private TextView bpmViewer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +85,26 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION).build();
+            soundPool = new SoundPool.Builder()
+                    .setMaxStreams(3)
+                    .setAudioAttributes(audioAttributes)
+                    .build();
+        }
+        else{
+            soundPool = new SoundPool(3, AudioManager.STREAM_MUSIC, 0);
+        }
+        beatSound = soundPool.load(this, R.raw.pop,1);
+        metronome = new Metronome(soundPool, beatSound);
+
+        bpmViewer = findViewById(R.id.textViewTempo);
+
+        bpmViewer.setText(String.valueOf(metronome.getBpm()));
+
     }
 
     //User wants to add file but no permissions were found
@@ -216,6 +252,26 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
+
+        MenuItem item = menu.findItem(R.id.feature_switch);
+        item.setActionView(R.layout.switch_item);
+
+        sw = item.getActionView().findViewById(R.id.switch_id);
+        sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                if(isChecked){
+                    System.out.println("metronome play");
+                    metronome.play();
+                } else{
+                    System.out.println("metronome stop");
+                    metronome.stop();
+                }
+            }
+        });
+
+
         return true;
     }
 
@@ -225,6 +281,16 @@ public class MainActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+
+        String res = String.valueOf(item.getTitle());
+        int bpm;
+        try{
+            bpm = Integer.parseInt(res);
+            metronome.setBpm(bpm);
+            bpmViewer.setText(String.valueOf(metronome.getBpm()));
+        }catch (NumberFormatException e){
+            System.out.println("Menu Item is not bpm value");
+        }
 
         return super.onOptionsItemSelected(item);
     }

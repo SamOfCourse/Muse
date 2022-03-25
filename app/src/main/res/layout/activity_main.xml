@@ -32,4 +32,15 @@
         android:visibility="visible"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
+    <TextView
+        android:id="@+id/textViewTempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Tempo"
+        android:textColor="#0078FF"
+        android:textSize="48sp" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
