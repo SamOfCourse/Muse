@@ -1,4 +1,4 @@
-package com.example.sheetmusic;
+package com.sheetmusic;
 
 import org.junit.Test;
 

@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.sheetmusic.MainActivity">
+    tools:context="com.sheetmusic.MainActivity">
 
 
 
@@ -11,26 +11,5 @@
         app:actionLayout="@layout/switch_item"
         app:showAsAction="always" />
     <item android:title="@string/menu_music_helper" />
-    <item android:title="@string/menu_note_listener" />
-    <item android:title="@string/menu_metronome">
-        <menu>
-            <group>
-                <item
-                    android:id="@+id/quarter_speed_switch"
-                    android:title="@string/submenu_metronome_quarter"
-                    app:actionLayout="@layout/switch_item"
-                    app:showAsAction="always" />
-                <item
-                    android:id="@+id/half_speed_switch"
-                    android:title="@string/submenu_metronome_half"
-                    app:actionLayout="@layout/switch_item"
-                    app:showAsAction="always" />
-                <item
-                    android:id="@+id/normal_speed_switch"
-                    android:title="@string/submenu_metronome_full"
-                    app:actionLayout="@layout/switch_item"
-                    app:showAsAction="always" />
-            </group>
-        </menu>
-    </item>
+    <item android:title="@string/menu_metronome" />
 </menu>
